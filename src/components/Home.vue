@@ -1,7 +1,7 @@
 <!--suppress XmlDuplicatedId -->
 <template>
   <div>
-    <mt-header fixed :title="title">
+    <mt-header fixed :title="title" class="home-header">
       <mt-button icon="back" slot="left" v-show="canBack">返回</mt-button>
       <mt-button icon="more" slot="right" v-show="false"></mt-button>
     </mt-header>
@@ -13,13 +13,13 @@
         <home-list></home-list>
       </mt-tab-container-item>
       <mt-tab-container-item id="tab-chat">
-        私信
+        <home-chat></home-chat>
       </mt-tab-container-item>
       <mt-tab-container-item id="tab-person">
-        个人中心
+        <home-center></home-center>
       </mt-tab-container-item>
       <mt-tab-container-item id="tab-setting">
-        设置
+        <home-setting></home-setting>
       </mt-tab-container-item>
     </mt-tab-container>
     <mt-tabbar fixed v-model="selected">
@@ -50,6 +50,9 @@
 <script>
   import HomeHot from './Home_Hot'
   import HomeList from './Home_List'
+  import HomeChat from './Home_Chat'
+  import HomeCenter from './Home_Center'
+  import HomeSetting from './Home_Setting'
 
   export default {
     name: 'home',
@@ -62,13 +65,19 @@
     },
     components: {
       HomeHot,
-      HomeList
+      HomeList,
+      HomeChat,
+      HomeCenter,
+      HomeSetting
     }
   }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .home-header {
+    z-index: 2;
+  }
   .container {
     margin-top: 40px;
     margin-bottom: 60px;

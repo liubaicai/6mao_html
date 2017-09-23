@@ -37,7 +37,7 @@
     background-color: white;
     box-sizing: border-box;
     display: block;
-    margin: 8px;
+    margin: 8px 16px 8px 16px;
     padding: 16px;
     text-align: left;
   }
