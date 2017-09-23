@@ -16,9 +16,9 @@
     margin: 0;
   }
   #app {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     color: #333333;
+  }
+  .mint-cell-wrapper {
+    background-image: none;
   }
 </style>
