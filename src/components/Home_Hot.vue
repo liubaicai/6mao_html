@@ -3,10 +3,10 @@
       <div class="card">
         <img class="card-img" src="http://blog.liubaicai.net/static/image/sitelogo.jpg">
         <div class="card-title card-line">
-          韭菜找个男朋友
+          <img class="card-icon" src="../assets/svg/female.svg">·韭菜找个男朋友
         </div>
         <div class="card-line">
-          <img class="card-icon" src="../assets/svg/female.svg"> · 北京市朝阳区
+          隔壁老王 发布于<img style="height: 12px;" src="../assets/svg/ios-location-outline.svg">北京市朝阳区
         </div>
         <div class="card-line">
           要求器大活好，有车有房，大波，浪，开卡丁车，年入几十亿的优先。程序员的猫不要。
@@ -54,7 +54,7 @@
     font-size: 24px;
   }
   .card-icon {
-    height: 12px;
+    height: 16px;
   }
   .card-buttons {
     text-align: right;
