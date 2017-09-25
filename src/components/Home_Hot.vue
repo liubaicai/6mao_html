@@ -1,7 +1,7 @@
 <template>
     <div>
       <div class="card">
-        <img class="card-img" src="http://blog.liubaicai.net/static/image/sitelogo.jpg">
+        <square-img width="calc(100vw - 64px)" url="http://fuss10.elemecdn.com/b/18/0678e57cb1b226c04888e7f244c20jpeg.jpeg"></square-img>
         <div class="card-title card-line">
           <img class="card-icon" src="../assets/svg/female.svg">·韭菜找个男朋友
         </div>
@@ -9,7 +9,7 @@
           隔壁老王 发布于<img style="height: 12px;" src="../assets/svg/ios-location-outline.svg">北京市朝阳区
         </div>
         <div class="card-line card-description">
-          要求器大活好，有车有房，大波，浪，开卡丁车，年入几十亿的优先。程序员的猫不要。
+          要求打发打发，有车有房，大波，浪，开卡丁车，年入几十亿的优先。程序员的猫不要。
         </div>
         <div class="card-buttons card-line">
           <mt-button class="card-button" type="default" size="small">
@@ -24,7 +24,12 @@
 </template>
 
 <script>
-    export default {}
+  import SquareImg from './modules/SquareImg.vue'
+  export default {
+    components: {
+      SquareImg
+    }
+  }
 </script>
 
 <style scoped>
@@ -42,16 +47,11 @@
     text-align: left;
   }
   .card-line {
+    font-size: 14px;
     margin: 12px 0 0 0;
   }
-  .card-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-  }
   .card-title {
-    font-size: 24px;
+    font-size: 22px;
   }
   .card-info {
     color: #999999;

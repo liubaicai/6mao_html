@@ -58,7 +58,7 @@
     name: 'home',
     data () {
       return {
-        selected: 'tab-person',
+        selected: 'tab-hot',
         title: '六毛',
         canBack: false
       }

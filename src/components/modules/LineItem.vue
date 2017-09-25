@@ -2,7 +2,7 @@
   <div class="page-item">
     <slot>
       <div style="float: left;">
-        <img class="page-item-img" slot="icon" src="http://blog.liubaicai.net/static/image/sitelogo.jpg">
+        <square-img class="page-item-img" width="60px" url="http://blog.liubaicai.net/static/image/sitelogo.jpg"></square-img>
       </div>
       <div class="page-item-content">
         <div class="page-item-title">
@@ -12,7 +12,7 @@
           隔壁老王 发布于<img style="height: 10px;" src="../../assets/svg/ios-location-outline.svg">北京市朝阳区
         </div>
         <div class="page-item-description">
-          要求器大活好，有车有房，大波，浪，开卡丁车，卡丁车，年入几十亿的优先。程序员的猫年入几十亿的优先。程序员的猫不要。sfsfsf大哥大哥大哥大哥放松放松发发发
+          要求打发打发，有车有房，大波，浪，开卡丁车，卡丁车，年入几十亿的优先。程序员的猫年入几十亿的优先。程序员的猫不要。sfsfsf大哥大哥大哥大哥放松放松发发发
         </div>
       </div>
     </slot>
@@ -20,9 +20,13 @@
 </template>
 
 <script>
-    export default {
-      name: 'line-item'
+  import SquareImg from '../modules/SquareImg.vue'
+  export default {
+    name: 'line-item',
+    components: {
+      SquareImg
     }
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -41,8 +45,6 @@
     /*border-bottom:none;*/
   /*}*/
   .page-item-img {
-    width: 60px;
-    height: 60px;
     margin: 15px 0;
   }
   .page-item-content {
