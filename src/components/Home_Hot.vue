@@ -5,10 +5,10 @@
         <div class="card-title card-line">
           <img class="card-icon" src="../assets/svg/female.svg">·韭菜找个男朋友
         </div>
-        <div class="card-line">
+        <div class="card-line card-info">
           隔壁老王 发布于<img style="height: 12px;" src="../assets/svg/ios-location-outline.svg">北京市朝阳区
         </div>
-        <div class="card-line">
+        <div class="card-line card-description">
           要求器大活好，有车有房，大波，浪，开卡丁车，年入几十亿的优先。程序员的猫不要。
         </div>
         <div class="card-buttons card-line">
@@ -52,6 +52,12 @@
   }
   .card-title {
     font-size: 24px;
+  }
+  .card-info {
+    color: #999999;
+  }
+  .card-description {
+    color: #999999;
   }
   .card-icon {
     height: 16px;
