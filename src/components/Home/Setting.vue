@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import LineItem from './modules/LineItem.vue'
+  import LineItem from '../modules/LineItem.vue'
   export default {
     data () {
       return {

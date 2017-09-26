@@ -7,7 +7,7 @@
             吃鸡真好玩
           </div>
           <div style="font-size: 12px;float: none;margin-top: 8px;color: #999999;">
-            <img style="height: 8px;" src="../assets/svg/ios-location-outline.svg">北京市朝阳区
+            <img style="height: 8px;" src="../../assets/svg/ios-location-outline.svg">北京市朝阳区
           </div>
           <div style="margin-top: 12px;float: right;">
             <mt-button class="card-button" type="default" size="small">
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-  import LineItem from './modules/LineItem.vue'
+  import LineItem from '../modules/LineItem.vue'
   import { MessageBox } from 'mint-ui'
   export default {
     methods: {
@@ -73,6 +73,7 @@
   .published-item {
     width: 100%;
     margin: 0;
+    float: left;
   }
   .published-item:first-child {
     border-bottom:none;

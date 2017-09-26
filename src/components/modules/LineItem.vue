@@ -32,10 +32,10 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .page-item {
-    width: calc(100% - 24px);
-    height: 90px;
-    float: left;
-    margin: 0 12px 0 12px;
+    /*width: calc(100% - 24px);*/
+    /*height: 90px;*/
+    /*float: left;*/
+    /*margin: 0 12px 0 12px;*/
     border-bottom:1px solid #eeeeee;
   }
   .page-item:first-child {

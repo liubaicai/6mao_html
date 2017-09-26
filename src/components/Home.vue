@@ -48,11 +48,11 @@
 </template>
 
 <script>
-  import HomeHot from './Home_Hot'
-  import HomeList from './Home_List'
-  import HomeChat from './Home_Chat'
-  import HomeCenter from './Home_Center'
-  import HomeSetting from './Home_Setting'
+  import HomeHot from './Home/Hot'
+  import HomeList from './Home/List'
+  import HomeChat from './Home/Chat'
+  import HomeCenter from './Home/Center'
+  import HomeSetting from './Home/Setting'
 
   export default {
     name: 'home',

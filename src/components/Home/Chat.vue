@@ -36,7 +36,7 @@
 </template>
 
 <script>
-  import SquareImg from './modules/SquareImg.vue'
+  import SquareImg from '../modules/SquareImg.vue'
   export default {
     components: {
       SquareImg
