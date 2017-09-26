@@ -10,9 +10,13 @@
             <img style="height: 8px;" src="../../assets/svg/ios-location-outline.svg">北京市朝阳区
           </div>
           <div style="margin-top: 12px;float: right;">
-            <mt-button class="card-button" type="default" size="small">
+            <mt-button class="card-button" type="default" size="small" @click="onEditClick">
               编辑资料
             </mt-button>
+            <mt-popup style="background: transparent;" v-model="isOnEdit" popup-transition="popup-fade">
+              <center-profile @onSaveClick="isOnEdit = false" @onLocationSelect="onLocationSelect"
+                              :nickName="nickName" :location="location"></center-profile>
+            </mt-popup>
           </div>
         </div>
       </div>
@@ -29,15 +33,30 @@
 
 <script>
   import LineItem from '../modules/LineItem.vue'
+  import CenterProfile from './CenterProfile'
   import { MessageBox } from 'mint-ui'
   export default {
+    data () {
+      return {
+        isOnEdit: false,
+        nickName: '',
+        location: ''
+      }
+    },
     methods: {
+      onEditClick () {
+        this.isOnEdit = true
+      },
       publishClick () {
         MessageBox.alert('操作成功!', '提示')
+      },
+      onLocationSelect () {
+        this.location += '1'
       }
     },
     components: {
-      LineItem
+      LineItem,
+      CenterProfile
     }
   }
 </script>
