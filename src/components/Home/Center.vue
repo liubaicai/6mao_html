@@ -13,10 +13,6 @@
             <mt-button class="card-button" type="default" size="small" @click="onEditClick">
               编辑资料
             </mt-button>
-            <mt-popup style="background: transparent;" v-model="isOnEdit" popup-transition="popup-fade">
-              <center-profile @onSaveClick="isOnEdit = false" @onLocationSelect="onLocationSelect"
-                              :nickName="nickName" :location="location"></center-profile>
-            </mt-popup>
           </div>
         </div>
       </div>
@@ -32,31 +28,25 @@
 </template>
 
 <script>
-  import LineItem from '../modules/LineItem.vue'
-  import CenterProfile from './CenterProfile'
+  import LineItem from '../modules/LineItem'
   import { MessageBox } from 'mint-ui'
   export default {
     data () {
       return {
-        isOnEdit: false,
         nickName: '',
         location: ''
       }
     },
     methods: {
       onEditClick () {
-        this.isOnEdit = true
+        this.$router.push({name: 'Profile'})
       },
       publishClick () {
         MessageBox.alert('操作成功!', '提示')
-      },
-      onLocationSelect () {
-        this.location += '1'
       }
     },
     components: {
-      LineItem,
-      CenterProfile
+      LineItem
     }
   }
 </script>
