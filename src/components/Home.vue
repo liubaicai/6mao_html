@@ -58,9 +58,18 @@
     name: 'home',
     data () {
       return {
-        selected: 'tab-hot',
         title: '六毛',
         canBack: false
+      }
+    },
+    computed: {
+      selected: {
+        get: function () {
+          return this.$store.state.homeSelected
+        },
+        set: function (newValue) {
+          this.$store.commit('updateHomeSelected', newValue)
+        }
       }
     },
     components: {
